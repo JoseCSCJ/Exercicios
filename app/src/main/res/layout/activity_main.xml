@@ -16,17 +16,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:onClick="atualizarLimite"
+        android:text="Atualizar limite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10px"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textVlrTotal"
+        android:text="Valor do limite"
+        android:textSize="25sp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLimiteAtual"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor total do pedido"
+        android:textSize="25sp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPedidoAtual"
         android:textSize="20sp"
         />
 
     <EditText
         android:id="@+id/editPedido"
-        android:hint="Valor do Pedido"
-        android:inputType="number"
+        android:hint="Novo Pedido"
+        android:inputType="numberDecimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
