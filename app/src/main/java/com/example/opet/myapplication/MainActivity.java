@@ -3,7 +3,6 @@ package com.example.opet.myapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,7 +12,6 @@ import java.text.DecimalFormat;
 public class MainActivity extends AppCompatActivity {
 
     private EditText  editPedido, editLimite;
-    private Button atualizarLimite, calculaSoma;
     private TextView textLimiteAtual, textPedidoAtual;
 
 
