@@ -44,11 +44,12 @@ public class MainActivity extends AppCompatActivity {
         if (total>Double.parseDouble(textLimiteAtual.getText().toString()))
             ultrap = total - Double.parseDouble(textLimiteAtual.getText().toString());
             String textToast = "Você ultrapassou o limite por " + ultrap;
-            Toast.makeText(getApplicationContext(), textToast, Toast.LENGTH_SHORT);
+            Toast.makeText(getApplicationContext(), textToast, Toast.LENGTH_SHORT).show();
 
 
     }
     public void atualizarLimite (View view){
+        textLimiteAtual.setText(editLimite.getText().toString());
 
 
     }
