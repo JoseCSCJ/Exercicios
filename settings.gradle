@@ -1,1 +1,1 @@
-include ':app', ':desconsiderar', ':desconsiderar1', ':exercicio2'
+include ':app', ':desconsiderar', ':desconsiderar1', ':exercicio2', ':exercicio345'
