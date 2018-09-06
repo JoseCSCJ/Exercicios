@@ -17,10 +17,30 @@ public class exercicio2 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercicio2);
 
+        editIdade=findViewById(R.id.editIdade);
+        textCampeonato=findViewById(R.id.textCampeonato);
+
 
     }
 
     public void categorizar (View view){
+
+        int idade = Integer.parseInt(editIdade.getText().toString());
+
+        if (idade < 8){
+            textCampeonato.setText("Nao se aplica");
+        }
+        if (idade >= 8 && idade <=12){
+            textCampeonato.setText("INFANTIL");
+        }
+        if (idade >= 13 && idade <=17){
+            textCampeonato.setText("JUVENIL");
+        }
+        if (idade >= 18){
+            textCampeonato.setText("ADULTO");
+        }
+
+
 
     }
 }
